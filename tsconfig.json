@@ -1,3 +1,28 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@screens/*": ["src/screens/*"],
+      "@navigation/*": ["src/Navigation/*"],
+      "@assets/*": ["src/assets/*"]
+    },
+    "allowJs": true,
+    "esModuleInterop": true,
+    "jsx": "react-native",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
 }
