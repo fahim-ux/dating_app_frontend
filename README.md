@@ -1,97 +1,97 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Dating App - Mobile Application
 
-# Getting Started
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 📱 Overview
+Dating App is a modern mobile application built with React Native that helps users find meaningful connections based on their interests, preferences, and location. The app features an intuitive user interface, real-time messaging, and sophisticated matching algorithms.
 
-## Step 1: Start Metro
+## ✨ Features
+- **User Authentication:** Secure login and signup system
+- **User Profiles:** Create and customize detailed profiles
+- **Matching Algorithm:** Smart matching based on preferences and interests
+- **Real-time Messaging:** Chat with your matches instantly
+- **Location Services:** Find matches nearby
+- **Privacy Controls:** Manage who sees your profile and information
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 📸 Screenshots
+<table>
+  <tr>
+    <td align="center">
+      <img src="[https://images.coderfolks.me/images/app_land.jpg]" width="200" alt="Landing Page"/>
+      <br /><b>Landing Page</b>
+    </td>
+    <td align="center">
+      <img src="[https://images.coderfolks.me/images/app_login.jpg" width="200" alt="Login Screen"/>
+      <br /><b>Login Screen</b>
+    </td>
+  </tr>
+</table>
 
-To start the Metro dev server, run the following command from the root of your React Native project:
 
-```sh
-# Using npm
-npm start
+## 🚀 Getting Started
 
-# OR using Yarn
-yarn start
-```
+### Prerequisites
+- Node.js (v18 or later)
+- npm or yarn
+- React Native development environment set up ([follow the official guide](https://reactnative.dev/docs/environment-setup))
 
-## Step 2: Build and run your app
+### Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/dating-app.git
+   cd dating-app
+   ```
+2. Install dependencies:
+   ```sh
+   npm install  # or yarn install
+   ```
+3. Create a `.env` file in the root of the project with your API keys.
+4. Start Metro bundler:
+   ```sh
+   npx react-native start
+   ```
+5. Run on Android/iOS:
+   ```sh
+   npx react-native run-android  # For Android
+   npx react-native run-ios      # For iOS
+   ```
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 📄 API Documentation
+The application uses a dedicated backend server for handling user data, authentication, and messaging. The API endpoints are as follows:
 
-### Android
+### **Base URL**
+- [BACKEND_URL](https://dating-app-backend.coderfolks.me/)
 
-```sh
-# Using npm
-npm run android
+### **Authentication Endpoints**
+- `POST /auth/register` - Register a new user
+- `POST /auth/login` - Login a user
+- `GET /auth/me` - Get current user information
 
-# OR using Yarn
-yarn android
-```
+### **User Endpoints**
+- `GET /users` - Get user list based on preferences
+- `GET /users/:id` - Get specific user profile
+- `PUT /users/:id` - Update user profile
+- `PUT /users/:id/preferences` - Update user preferences
 
-### iOS
+### **Matching Endpoints**
+- `POST /matches` - Create a new match
+- `GET /matches` - Get all matches
+- `DELETE /matches/:id` - Unmatch a user
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+### **Messaging Endpoints**
+- `POST /messages` - Send a new message
+- `GET /messages/:matchId` - Get conversation history
+- `PUT /messages/:id/read` - Mark message as read
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
 
-```sh
-bundle install
-```
 
-Then, and every time you update your native dependencies, run:
+## 📝 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```sh
-bundle exec pod install
-```
+## 👥 Team
+- **@fahim-ux** - Developer
+- **@fox-trap** - UI/UX Designer
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 🔗 Links
+- [Backend Repository](https://github.com/fahim-ux/dating_app_backend)
+- [Project Board](https://github.com/your-repo/projects)
+- [Documentation](https://your-docs-url.com)
